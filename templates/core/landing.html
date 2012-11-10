@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block "content" %}
+    <h1>Visualizations Portfolio</h1>
+    {% for v in visualizations %}
+        <a href="{% url visualization v.slug %}"><h3 style="margin-bottom: 0px;">{{ v.name }}</h3>
+        <img src="{{ STATIC_URL }}img/{{ v.slug }}.png" width="400" height="286" class="img-polaroid"></a>
+    {% endfor %}
+{% endblock %}

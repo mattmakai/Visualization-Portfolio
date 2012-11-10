@@ -1,0 +1,7 @@
+django
+wsgiref
+gunicorn
+psycopg2
+dj-database-url
+newrelic
+django-taggit

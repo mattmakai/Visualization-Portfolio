@@ -1,0 +1,7 @@
+*.pyc
+.Python
+*\.*swp
+.DS_Store
+local_settings.py
+local_fabfile.py
+vizportdb
