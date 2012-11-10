@@ -10,8 +10,8 @@ TEMPLATE_DIRS = ('/app/templates/',)
 MEDIA_ROOT = '/app/media/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/app/core/collect_static/'
-STATIC_URL = 'http://static.vizport.com/'
 STATICFILES_DIRS = ()
+STATIC_URL = 'http://static.visualizationportfolio.com/'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 # Local time zone for this installation. Choices can be found here:
