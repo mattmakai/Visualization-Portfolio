@@ -6,7 +6,7 @@ here!
 
 Heroku Settings
 ---------------
-git config:add SECRET\_KEY='something super secret'
+git config:add DJANGO\_SECRET\_KEY='something super secret'
 
 git config:add STATIC\_URL='http://mystatic.url.com/'
 
