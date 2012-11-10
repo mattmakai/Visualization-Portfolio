@@ -6,6 +6,7 @@ here!
 
 Heroku Settings
 ---------------
-SECRET\_KEY = 'abc'
-STATIC\_URL = 'http://mystatic.url.com/'
+git config:add SECRET\_KEY='something super secret'
+
+git config:add STATIC\_URL='http://mystatic.url.com/'
 
