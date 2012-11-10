@@ -13,8 +13,5 @@ class Visualization(models.Model):
     data = models.TextField(blank=True)
     tags = TaggableManager()
     def __unicode__(self):
-        try:
-            return u"%s" % (self.name)
-        except:
-            return "unknown"
+        return u"%s" % (self.name)
 
