@@ -28,5 +28,6 @@ def landing(req):
 
 def visualization(req, slug):
     p = _create_params(req)
+    p['visualizations'] = Visualization.objects.all()
     p['visualization'] = get_object_or_404(Visualization, slug=slug)
     return render(req, TEMPLATE_PATH + 'visualization.html', p)

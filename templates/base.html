@@ -7,6 +7,7 @@
     <meta name="description" content="A data visualization portfolio created by Matt Makai.">
     <meta name="author" content="Matt Makai">
     <link href="{{ STATIC_URL }}css/app.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bootstrap-responsive.min.css" rel="stylesheet">
     <style>
         {% block "styles" %}{% endblock %}
     </style>
@@ -17,12 +18,9 @@
     <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
   </head>
   <body>
+    {% include "nav-bar.html" %}
     <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span12">
-          {% block "content" %}{% endblock %}
-        </div>
-      </div>
+      {% block "content" %}{% endblock %}
       <div class="row-fluid">
         <div class="span12">
           <hr/>
