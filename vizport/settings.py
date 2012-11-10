@@ -3,7 +3,7 @@ import os
 import dj_database_url
 
 # heroku settings (overriden with local_settings.py if exists)
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
 TEMPLATE_DIRS = ('/app/templates/',)
