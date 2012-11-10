@@ -1,4 +1,5 @@
 # Default Heroku Django settings for vizport project.
+import os
 import dj_database_url
 
 # heroku settings (overriden with local_settings.py if exists)
