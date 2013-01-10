@@ -13,9 +13,14 @@
             <div id="viz"></div>
         </div>
     </div>
+    <hr/>
+    {% include "core/show_js.html" %}
 {% endblock %}
 
 {% block "js_ready" %}
+    $("#javascript_show_hide").hide();
+    $("#hide_js").hide();
+
     {% autoescape off %}
         var data = {{ visualization.data }};
         {{ visualization.javascript }}

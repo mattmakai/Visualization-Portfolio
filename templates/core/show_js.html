@@ -1,0 +1,10 @@
+<div class="row-fluid">
+    <div class="span12">
+        <a id="show_js" href="javascript:$('#javascript_show_hide').slideDown(); $('#show_js').hide(); $('#hide_js').show();">Show JavaScript</a><a id="hide_js" href="javascript:$('#javascript_show_hide').slideUp(); $('#show_js').show(); $('#hide_js').hide();">Hide JavaScript</a>
+        <div id="javascript_show_hide">
+        {% autoescape off %}
+            <pre>{{ visualization.javascript }}</pre>
+        {% endautoescape %}
+        </div>
+    </div>
+</div>
